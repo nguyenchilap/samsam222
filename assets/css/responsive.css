@@ -120,8 +120,9 @@
     }
 
     .nav__user-details::before {
-        top: -36px;
-        right: -8px;
+        top: -12%;
+        right: 0%;
+        border-width: 24px 22px;
     }
 
     .nav__name-title{
