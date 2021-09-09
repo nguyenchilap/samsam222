@@ -25,6 +25,12 @@
     align-items: center;
 }
 
+.nav__item-maps{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
 .nav__item{
     cursor: pointer;
 }
@@ -47,6 +53,10 @@
 .nav__fav:hover .nav__fav-text,
 .nav__user:hover .nav__user-name{
     color: #ccc;
+}
+
+.nav__contact-mobile{
+    display: none;
 }
 
 .nav__contact{
@@ -153,6 +163,10 @@
     line-height: var(--header-height);
     text-decoration: none;
     padding: 0 14px;
+}
+
+.nav__item-icon{
+    display: none;
 }
 
 /* NAV EDUCATION */
@@ -603,7 +617,7 @@ img.topic__avatar-img-3{
 .filter__item--selected{
 }
 
-.filer__item-link{
+.filter__item-link{
     position: relative;
     right: 0;
     display: block;
@@ -613,7 +627,7 @@ img.topic__avatar-img-3{
 }
 
 
-.filer__item-link::before{
+.filter__item-link::before{
     content: "";
     border-color: transparent transparent transparent var(--text-hover-color);
     border-style: solid;
@@ -624,13 +638,13 @@ img.topic__avatar-img-3{
     display: none;
 }
 
-.filer__item-link:hover {
+.filter__item-link:hover {
     font-weight: 600;
     color: var(--text-hover-color);
     right: -4px;
 }
 
-.filer__item-link:hover.filer__item-link::before{
+.filter__item-link:hover.filter__item-link::before{
     display: block;
 }
 
