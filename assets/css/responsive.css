@@ -44,7 +44,7 @@
     }
 
     .nav__contact-mobile-icon{
-        padding: 15px 6px;
+        padding: 15px 4px;
         font-size: 2rem;
     }
 
@@ -61,7 +61,7 @@
     }
 
     .nav__item.nav__item-mapping{
-        padding: 0 8px;
+        padding: 0 2px;
     }
 
     .nav__item .nav__item-text{
