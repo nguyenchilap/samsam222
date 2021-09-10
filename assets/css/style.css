@@ -481,7 +481,6 @@ img.topic__avatar-img{
     border: 8px solid var(--white-color);
     border-radius: 50%; 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    animation: fadeIn ease 0.2s;
 }
 
 img.topic__avatar-img-1{
@@ -539,6 +538,10 @@ img.topic__avatar-img-3{
 
 .reaction__btn{
     margin: 0 16px;
+}
+
+.reaction__btn:hover .reaction__btn-icon{
+    filter: brightness(60%);
 }
 
 .reaction__btn-icon{
