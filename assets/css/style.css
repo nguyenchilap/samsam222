@@ -525,6 +525,63 @@ img.topic__avatar-img-3{
     font-weight: 500;
 }
 
+.topic__sound{
+    position: absolute;
+    top: 10%;
+    right: 6%;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: var(--white-color);
+    overflow: hidden;
+}
+
+.topic__sound-img{
+    height: 100%;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.topic__sound-name{
+    margin-left: 24px;
+    flex: 1;
+    font-size: 1.2rem;
+}
+
+.topic__sound-control{
+    font-size: 2.4rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+i.topic__sound-icon--pause{
+    display: none;
+}
+
+i.topic__sound-icon--play{
+    display: block;
+}
+
+.topic__sound-control.pausing i.topic__sound-icon--pause{
+    display: block;
+}
+
+.topic__sound-control.pausing i.topic__sound-icon--play{
+    display: none; 
+}
+
+.topic__sound-control.pausing i.disappear{
+    display: none !important;
+}
+
 /* REACTION */
 .reaction{
     background-color: #F5F5F5;
