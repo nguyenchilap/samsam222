@@ -3,12 +3,19 @@ let FILTER_SELECTED = {
     posts: 'cap2'
 }
 
+let MUSIC_SELECTED_INDEX = 1;
+
+
+
 function init() {
     if (renderPhotos(FILTER_SELECTED.photos)) {
         $(`.filter__item-link[filterValue="${FILTER_SELECTED.photos}"]`).addClass('active');
     };
     responsive();
     handleScroll();
+    renderTopicMusic();
+    renderListMusic();
+    // handleMusicItemBtn();
 }
 
 function renderPhotos(filterValue) {
@@ -73,6 +80,34 @@ function renderPhotos(filterValue) {
     });
     handleItemImgBtn();
     return true;
+}
+
+function renderTopicMusic() {
+    $('audio.topic__sound-audio').attr('src', MUSICS[MUSIC_SELECTED_INDEX].url);
+    $('.topic__sound-name').html(MUSICS[MUSIC_SELECTED_INDEX].name);
+    $('.topic__sound-img').css('background-image',`url('${MUSICS[MUSIC_SELECTED_INDEX].img}')`);
+}
+
+function renderListMusic() {
+    $('ul.nav__music-list').html('');
+    MUSICS.forEach((music, index) => {
+        $('ul.nav__music-list').append(`
+            <li class="nav__music-item" onclick="onMusicItemBtn(event, ${index})">
+                <div class="nav__music-item-link">
+                    <img src="${music.img}" alt="page-img" class="nav__music-item-img">
+                    <div class="nav__music-item-name">${music.name}</div>
+                    <div class="nav__music-item-author">${music.author}</div>
+                </div>
+            </li>
+        `);
+    })
+}
+
+function onMusicItemBtn(event, index) {
+    $('.nav__music-item').removeClass('active');
+    event.target.classList.add('active');
+    MUSIC_SELECTED_INDEX = index;
+    renderTopicMusic();
 }
 
 function handleScroll() {

@@ -465,3 +465,37 @@ const LIST_PHOTO = {
         ]
     }
 }
+
+
+const MUSICS = [
+    {
+        name: 'Mùa Thu Cho Em',
+        author: 'Trinh',
+        url: './assets/musics/MuaThuChoEm.mp3',
+        img: './assets/img/music-cover/MuaThuChoEm.jpg'
+    },
+    {
+        name: 'Xanh',
+        author: 'Ngọt',
+        url: './assets/musics/Xanh.mp3',
+        img: './assets/img/music-cover/Xanh.jpg'
+    },
+    {
+        name: 'Cá Hồi',
+        author: 'Ngọt',
+        url: './assets/musics/CaHoi.mp3',
+        img: './assets/img/music-cover/CaHoi.jpg'
+    },
+    {
+        name: 'EM CÓ CHẮC KHÔNG (?) (bài ca rebound)',
+        author: 'Ngọt',
+        url: './assets/musics/EmCoChacKhong.mp3',
+        img: './assets/img/music-cover/EmCoChacKhong.jpg'
+    },
+    {
+        name: '(sau đây là) DỰ BÁO THỜI TIẾT (cho các vùng vào ngày mai)',
+        author: 'Ngọt',
+        url: './assets/musics/EmCoChacKhong.mp3',
+        img: './assets/img/music-cover/EmCoChacKhong.jpg'
+    }
+]

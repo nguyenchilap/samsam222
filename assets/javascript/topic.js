@@ -106,7 +106,6 @@ function showAngryToast(){
         checkPlaying: function(){
             if(this.isPausing === false) {
                 audio.play();
-                console.log('ok');
             }
             else audio.pause();
         },

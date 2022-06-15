@@ -76,6 +76,11 @@ img.topic__avatar-img.active {
     margin-left: 24px;
     flex: 1;
     font-size: 1.2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
 }
 
 .topic__sound-control i {
