@@ -45,8 +45,6 @@
 }
 
 /* STATUS */
-#status{
-}
 
 .filter{
     background-color: var(--white-color);
@@ -77,9 +75,6 @@ ul.filter__list{
 
 .filter__item:last-child{
     border-bottom-color: transparent;
-}
-
-.filter__item--selected{
 }
 
 .filter__item-link{
@@ -120,8 +115,6 @@ ul.filter__list{
 
 .container__item{
     display: block;
-    text-decoration: none;
-    color: var(--text-color);
     margin-top: 16px;
     background-color: var(--white-color);
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
@@ -140,12 +133,53 @@ ul.filter__list{
     transform: translateY(-1px);
 }
 
+.item__detail {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.item__imgs {
+    display: flex;
+    position: relative;
+}
+
+.btn.btn-item-img {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.648);
+    font-size: 36px;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.btn.btn-item-img:hover {
+    background-color: #ffffff1f;
+    opacity: 1;
+}
+
+.btn.btn-item-img:focus {
+    box-shadow: none;
+}
+
+.btn.btn-item-img-left {
+    left: 0;
+    padding-right: 16px;
+}
+
+.btn.btn-item-img-right {
+    right: 0;
+    padding-left: 16px;
+}
+
 .item__img{
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center ;
     border-bottom: 1px solid var(--border-color);
+}
+
+.item__img.active {
+    flex: 1;
 }
 
 .item__review{
@@ -174,10 +208,6 @@ ul.filter__list{
 .item__react{
     font-size: 1.5rem;
     color: #532e63;
-}
-
-.item__react-like-icon{
-
 }
 
 i.item__react-liked-icon{

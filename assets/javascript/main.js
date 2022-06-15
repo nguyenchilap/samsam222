@@ -1,11 +1,11 @@
 let FILTER_SELECTED = {
-    photos: 'cap2',
+    photos: 'daihoc',
     posts: 'cap2'
 }
 
 function init() {
     if (renderPhotos(FILTER_SELECTED.photos)) {
-        $('.filter__item-link[filterValue="cap2"]').addClass('active');
+        $(`.filter__item-link[filterValue="${FILTER_SELECTED.photos}"]`).addClass('active');
     };
     responsive();
     handleScroll();
@@ -25,11 +25,33 @@ function renderPhotos(filterValue) {
     $('.content__title').html(LIST_PHOTO[filterValue].title)
 
     LIST_PHOTO[filterValue].photos.forEach(function(photo, index) {
+        let itemImg = '';
+        if (photo.img) {
+            itemImg = `<div class="item__img" style="background-image: url('./assets/img/photos/${filterValue}/${filterValue}_${index}.jpg')"></div>`;
+        } else if (photo.imgs) {
+            itemImg = `
+                <div class="item__imgs" albumIndex="${index}" currentIndex="${0}">
+                    <button class="btn btn-item-img btn-item-img-left">
+                        <i class="fa-solid fa-caret-left"></i>
+                    </button>
+            `
+            photo.imgs.forEach((img, i) => {
+                if (i == 0) itemImg += `<div class="item__img active item__img-${i}" style="background-image: url(${img})"></div>`;
+                else itemImg += `<div class="item__img item__img-${i}" style="background-image: url(${img})"></div>`
+            });
+
+            itemImg += `
+                    <button class="btn btn-item-img btn-item-img-right">
+                        <i class="fa-solid fa-caret-right"></i>
+                    </button>
+                </div>
+            `
+        }
         $('#list-photo').append(`
             <div class="col-3">
-                <a href="${photo.url}" target="_blank" class="container__item">
-                    <div class="item__img" style="background-image: url('./assets/img/photos/${filterValue}/${filterValue}_${index}.jpg')"></div>
-                    <div class="item__detail">
+                <div class="container__item">
+                    ${itemImg}
+                    <a href="${photo.url}" target="_blank" class="item__detail">
                         <div class="item__review">${photo.title}</div>
                         <div class="item__date">${photo.date}</div>
                         <div class="item__footer">
@@ -44,11 +66,12 @@ function renderPhotos(filterValue) {
                             <i class="item__label-favor-icon fas fa-crown"></i>
                             <span class="item__label-favor-text">Favorite</span>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>  
         `);
     });
+    handleItemImgBtn();
     return true;
 }
 
@@ -65,6 +88,40 @@ function handleScroll() {
         $('html, body').animate({
             scrollTop: $("#photos").offset().top
         }, 100);
+    })
+}
+
+function handleItemImgBtn() {
+    $('.btn-item-img-left').click((e) => {
+        const parent = $(e.target).parents('.item__imgs');
+        const albumIndex = parent.attr('albumIndex');
+        let currentIndex = Number.parseInt(parent.attr('currentIndex'));
+
+        if (currentIndex == 0) {
+            return;
+        }
+
+        currentIndex -= 1;
+
+        parent.attr('currentIndex', currentIndex);
+        $(`.item__imgs[albumIndex="${albumIndex}"] .item__img`).removeClass('active');
+        $(`.item__imgs[albumIndex="${albumIndex}"] .item__img-${currentIndex}`).addClass('active');
+    })
+
+    $('.btn-item-img-right').click((e) => {
+        const parent = $(e.target).parents('.item__imgs');
+        const albumIndex = parent.attr('albumIndex');
+        let currentIndex = Number.parseInt(parent.attr('currentIndex'));
+
+        if (currentIndex == LIST_PHOTO[FILTER_SELECTED.photos].photos[albumIndex].imgs.length - 1) {
+            return;
+        }
+
+        currentIndex += 1;
+
+        parent.attr('currentIndex', currentIndex);
+        $(`.item__imgs[albumIndex="${albumIndex}"] .item__img`).removeClass('active');
+        $(`.item__imgs[albumIndex="${albumIndex}"] .item__img-${currentIndex}`).addClass('active');
     })
 }
 
