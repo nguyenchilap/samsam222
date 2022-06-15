@@ -1,6 +1,6 @@
 const LIST_PHOTO = {
     cap1: {
-        title: 'BỘ SƯU TẬP NHỮNG NĂM 2011 VỀ TRƯỚC',
+        title: 'BỘ SƯU TẬP NHỮNG NGÀY BÉ THƠ',
         photos: [
             {
                 img: './assets/img/photos/cap1/cap1_0.jpg',
@@ -26,7 +26,7 @@ const LIST_PHOTO = {
         ]
     },
     cap2: {
-        title: 'BỘ SƯU TẬP NHỮNG NĂM 2011 - 2015',
+        title: 'BỘ SƯU TẬP NHỮNG NĂM THÁNG HỒN NHIÊN',
         photos: [
             {
                 img: './assets/img/photos/cap2/cap2_0.jpg',
@@ -213,7 +213,7 @@ const LIST_PHOTO = {
         ]
     },
     cap3: {
-        title: 'BỘ SƯU TẬP NHỮNG NĂM 2015 - 2018',
+        title: 'BỘ SƯU TẬP NHỮNG NĂM MIỆT MÀI HỌC TẬP',
         photos: [
             {
                 img: './assets/img/photos/cap3/cap3_0.jpg',
@@ -225,7 +225,7 @@ const LIST_PHOTO = {
         ]
     },
     daihoc: {
-        title: 'BỘ SƯU TẬP NHỮNG NĂM ĐẠI HỌC',
+        title: 'BỘ SƯU TẬP NHỮNG NĂM SẮP LÀM CÔ GIÁO',
         photos: [
             {
                 img: './assets/img/photos/daihoc/daihoc_0.jpg',
