@@ -66,29 +66,29 @@
         left: -200%;
     }
 
-    .nav__fav{
+    .nav__music{
         padding: 16px 10px;
     }
 
-    .nav__fav-text{
+    .nav__music-text{
         display: none;
     }
 
-    .nav__fav-list{
+    .nav__music-list{
         height: 30vh;
     }
 
-    .nav__fav-list-title{
+    .nav__music-list-title{
         font-size: 1.4rem;
     }
 
-    .nav__fav-list-wrap {
+    .nav__music-list-wrap {
         width: 200px;
         right: -16px;
         top: calc(100% + 1px);
     }
 
-    .nav__fav-list-wrap::before{
+    .nav__music-list-wrap::before{
         top: -40px;
         right: 5%;
         border-width: 24px 24px;
