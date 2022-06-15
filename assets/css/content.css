@@ -1,0 +1,229 @@
+/* CONTAINER */
+
+.content{
+    padding: 120px 0 120px;
+    background-color: #F5F5F5;
+}
+
+.content__change-bg{
+    padding-top: 80px;
+    background-color: var(--primary-color);
+}
+
+.content__title{
+    font-size: 2.6rem;
+    width: 100%;
+    text-align: center;
+    padding: 4px 0 8px;
+    border-radius: 3px;
+}
+
+.content__change-bg .content__title {
+    color: #eaeaea;
+    background-color: #6c6060;
+}
+
+.btn.btn-scroll-top-content {
+    position: fixed;
+    right: 16px;
+    top: 500px;
+    display: none;
+    animation: fadeIn .5s ease-in;
+}
+
+.btn-scroll-top-content.active {
+    display: block;
+}
+
+.btn.btn-scroll-top-content:focus {
+    box-shadow: none;
+}
+
+.btn.btn-scroll-top-content i {
+    font-size: 60px;
+    color: #573727;
+}
+
+/* STATUS */
+#status{
+}
+
+.filter{
+    background-color: var(--white-color);
+    border-radius: 4px;
+    padding-bottom: 8px;
+}
+
+.filter__heading{
+    font-size: 1.8rem;
+    padding: 24px 20px 16px;
+    margin-bottom: 8px;
+    font-weight: 550;
+    /* border-bottom: 1px solid var(--border-color); */
+}
+
+ul.filter__list{
+    list-style: none;
+    font-size: 1.4rem;
+    padding-left: 0rem;
+    margin-bottom: 1.0rem;
+}
+
+.filter__item{  
+    padding: 8px 4px;
+    margin: 0 24px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filter__item:last-child{
+    border-bottom-color: transparent;
+}
+
+.filter__item--selected{
+}
+
+.filter__item-link{
+    position: relative;
+    right: 0;
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: right linear 0.3s;
+    cursor: pointer;
+}
+
+
+.filter__item-link::before{
+    content: "";
+    border-color: transparent transparent transparent var(--text-hover-color);
+    border-style: solid;
+    position: absolute;
+    left: -14px;
+    top: 4px;
+    border-width: 4px 8px;
+    display: none;
+}
+
+.filter__item-link.active::before {
+    display: block;
+}
+
+.filter__item-link.active,
+.filter__item-link:hover {
+    font-weight: 600;
+    color: var(--text-hover-color);
+    right: -4px;
+}
+
+
+/* Container ITEMS */
+
+.container__item{
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    margin-top: 16px;
+    background-color: var(--white-color);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    position: relative;
+    will-change: transform;
+    transition: transform linear 0.1s;
+}
+
+.container__item:hover{
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+.container__change-bg .container__item:hover{
+    box-shadow: 0 1px 20px 0 rgba(255, 255, 255, 0.25);
+    transform: translateY(-1px);
+}
+
+.item__img{
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.item__review{
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 8px 20px 0;
+    font-weight: 550;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.item__date{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.item__footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    font-size: 1.3rem;
+}
+
+.item__react{
+    font-size: 1.5rem;
+    color: #532e63;
+}
+
+.item__react-like-icon{
+
+}
+
+i.item__react-liked-icon{
+    display: none;
+}
+
+.item__react--liked .item__react-like-icon{
+    display: none;
+}
+.item__react--liked .item__react-liked-icon{
+    display: inline-block;
+}
+
+.item__location{
+    color: #595959;
+}
+
+.item__label-favor{
+    position: absolute;
+    top: 4%;
+    left: -3%;
+    background-color: #e31b23;
+    color: var(--white-color);
+    padding: 2px 10px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.item__label-favor-text{
+    font-size: 1.2rem;
+    font-weight: 550;
+    padding-top: 2px;
+}
+
+.item__label-favor-icon{
+    font-size: 1rem;
+    margin-right: 4px;
+}
+
+.item__label-favor::after{
+    content: "";
+    position: absolute;
+    border-top: 4px solid #e31b23;
+    border-left: 4px solid transparent;
+    left: 0;
+    bottom: -4px;
+    filter: brightness(60%);
+}

@@ -12,7 +12,7 @@
     --love-color: #e31b23;
     --angry-color: #c92929;
 
-    --header-height: 50px;
+    --header-height: 60px;
 }
 
 /* Reset Css */
@@ -30,66 +30,7 @@ html{
     box-sizing: border-box;
 }
 
-/* Grid */
-
-.grid{
-    width: 1400px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width{
-    width: 100%;
-}
-
-.grid__row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -5px;
-    margin-right: -5px;
-}
-
-.grid__column-2{
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 16.666666666667%;
-}
-
-.grid__column-3{
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 25%;
-}
-
-.grid__column-2-4{
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 20%;
-}
-
-.grid__column-5{
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 20%;
-}
-
-.grid__column-10{
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 83.33333333333333333%;
-}
-
-/* BUTTON */
-.btn{
-    display: inline-block;
-    outline: none;
-    text-decoration: none;
-    border: none; 
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* TOAST */
+/* CUSTOM-TOAST */
 #toast{
     position: fixed;
     top: 58px;
@@ -97,7 +38,7 @@ html{
     z-index: 99999999;
 }
 
-.toast{
+.custom-toast{
     min-width: 380px;
     max-width: 450px;
     display: flex;
@@ -110,62 +51,62 @@ html{
     transition: all linear 0.4s;
 }
 
-.toast + .toast{
+.custom-toast + .custom-toast{
     margin-top: 12px;
 }
 
-.toast__icon,
-.toast__close{
+.custom-toast__icon,
+.custom-toast__close{
     padding: 0 16px;
 }
 
-.toast__icon{
+.custom-toast__icon{
     font-size: 24px;
 }
 
-.toast__close{
+.custom-toast__close{
     font-size: 20px;
     color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
-.toast__close:hover{
+.custom-toast__close:hover{
     opacity: 0.7;
 }
 
-.toast__title{
+.custom-toast__title{
     font-size: 1.6rem;
     font-weight: 600;
     color: var(--text-color);
 }
 
-.toast__body{
+.custom-toast__body{
     flex-grow: 1;
 }
 
-.toast__msg{
+.custom-toast__msg{
     font-size: 1.4rem;
     margin-top: 6px;
     line-height: 1.5;
 }
 
-.toast--love{
+.custom-toast--love{
     border-color: var(--love-color);
 }
-.toast--love .toast__icon{
+.custom-toast--love .custom-toast__icon{
     color: var(--love-color);
 }
 
-.toast--like .toast__icon{
+.custom-toast--like .custom-toast__icon{
     border-color: var(--facebook-color);
 }
-.toast--like{
+.custom-toast--like{
     color: var(--facebook-color);
 }
 
-.toast--angry{
+.custom-toast--angry{
     border-color: var(--angry-color);
 }
-.toast--angry .toast__icon{
+.custom-toast--angry .custom-toast__icon{
     color: var(--angry-color);
 }
 
@@ -202,23 +143,11 @@ html{
     }
 }
 
-@keyframes avt-1 {
+@keyframes avt {
     0% {visibility: visible;}
     33% {visibility: visible;}
     66% {visibility: hidden;}
     100% {visibility: hidden;}
-}
-@keyframes avt-2 {
-    0% {visibility: hidden;}
-    33% {visibility: hidden;}
-    66% {visibility: visible;}
-    100% {visibility: hidden;}
-}
-@keyframes avt-3 {
-    0% {visibility: hidden;}
-    33% {visibility: hidden;}
-    66% {visibility: hidden;}
-    100% {visibility: visible;}
 }
 
 @keyframes slideInLeft{

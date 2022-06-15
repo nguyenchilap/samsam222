@@ -1,0 +1,227 @@
+const LIST_PHOTO = {
+    cap1: {
+        title: 'BỘ SƯU TẬP NHỮNG NĂM 2011 VỀ TRƯỚC',
+        photos: [
+            {
+                img: './assets/img/photos/cap1/cap1_0.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '01/12/2013',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo.php?fbid=189864121205519&set=t.100005457970222&type=3',
+            },
+            {
+                img: './assets/img/photos/cap1/cap1_1.jpg',
+                title: 'Tết ngày xưa =)))))))',
+                date: '2010',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo.php?fbid=1507012759601283&set=pb.100008777194197.-2207520000..&type=3',
+            },
+            {
+                img: './assets/img/photos/cap1/cap1_2.jpg',
+                title: 'Ảo ma Canada. Sam lúc 10 năm trước',
+                date: '2010',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo.php?fbid=614380646217782&set=pb.100029375572457.-2207520000..&type=3',
+            }
+        ]
+    },
+    cap2: {
+        title: 'BỘ SƯU TẬP NHỮNG NĂM 2011 - 2015',
+        photos: [
+            {
+                img: './assets/img/photos/cap2/cap2_0.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '17/06/2013',
+                location: 'Bạch Mã - Huế',
+                url: 'https://www.facebook.com/photo.php?fbid=149184215273510&set=pb.100005457970222.-2207520000..&type=3',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_1.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '18/08/2013',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo/?fbid=165170450341553&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_2.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '18/08/2013',
+                location: 'Bạch Mã - Huế',
+                url: 'https://www.facebook.com/photo/?fbid=165170450341553&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_3.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '06/09/2013',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo.php?fbid=169568383235093&set=pb.100005457970222.-2207520000..&type=3',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_4.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '17/09/2013',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo/?fbid=172201292971802&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_5.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '01/10/2013',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo/?fbid=175560212635910&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_6.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '19/10/2013',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo/?fbid=179827262209205&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_7.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '7/12/2013',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo?fbid=191132957745302&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_8.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '14/12/2013',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo/?fbid=192841950907736&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_9.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '02/01/2014',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo/?fbid=201362543389010&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_10.jpg',
+                title: 'Cứng đơ i :))',
+                date: '13/01/2014',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo/?fbid=208196972705567&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_11.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '27/05/2014',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo/?fbid=254949518030312&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_12.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '27/05/2014',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo/?fbid=255013151357282&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_13.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '03/06/2014',
+                location: 'Thuận An - Huế',
+                url: 'https://www.facebook.com/photo/?fbid=258062961052301&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_14.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '05/06/2014',
+                location: 'Thuận An - Huế',
+                url: 'https://www.facebook.com/photo/?fbid=258782097647054&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_15.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '05/06/2014',
+                location: 'Đại nội',
+                url: 'https://www.facebook.com/photo/?fbid=303627763162487&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_16.jpg',
+                title: 'Sinh nhật Nhật Anh 🎂🎂🎁🎉🎊',
+                date: '09/10/2014',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo/?fbid=309750035883593&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_17.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '10/11/2014',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo/?fbid=319704624888134&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_18.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '10/11/2014',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo/?fbid=319780751547188&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_19.jpg',
+                title: 'dang di festival lang nghe',
+                date: '27/04/2013',
+                location: 'Festival lang nghe',
+                url: 'https://www.facebook.com/photo/?fbid=133934713465127&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_20.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '29/05/2013',
+                location: 'Trường NTP',
+                url: 'https://www.facebook.com/photo/?fbid=143279882530610&set=pb.100005457970222.-2207520000..',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_21.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '29/05/2013',
+                location: 'Trường NTP',
+                url: 'https://www.facebook.com/photo.php?fbid=143320005859931&set=pb.100005457970222.-2207520000..&type=3',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_22.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '24/01/2015',
+                location: 'Trường NTP',
+                url: 'https://www.facebook.com/photo.php?fbid=1575690929341832&set=t.100005457970222&type=3',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_23.jpg',
+                title: 'mặt ngu :v :v',
+                date: '22/05/2014',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo/?fbid=252568811601716&set=t.100005457970222',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_24.jpg',
+                title: 'wedding...',
+                date: '24/05/2014',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo/?fbid=253565441502053&set=t.100005457970222',
+            },
+            {
+                img: './assets/img/photos/cap2/cap2_25.jpg',
+                title: 'wedding...',
+                date: '29/12/2013',
+                location: 'Huế',
+                url: 'https://www.facebook.com/photo.php?fbid=199194220272509&set=t.100005457970222&type=3',
+            }
+        ]
+    },
+    cap3: {
+        title: 'BỘ SƯU TẬP NHỮNG NĂM 2015 - 2018',
+        photos: [
+            {
+                img: './assets/img/photos/cap3/cap3_0.jpg',
+                title: 'Nguyễn Ngọc Bảo Vi',
+                date: '29/08/2015',
+                location: 'Trường HBT',
+                url: 'https://www.facebook.com/photo.php?fbid=1470286826607210&set=pb.100008777194197.-2207520000..&type=3',
+            },
+        ]
+    }
+}

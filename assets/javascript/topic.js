@@ -1,6 +1,3 @@
-//DEFINE
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
 
 //TOAST
 function toast({
@@ -8,7 +5,7 @@ function toast({
     message = '',
     type = 'info',
     duration = 1000
-    })
+})
 {
     const main = document.getElementById('toast');
     if (main){
@@ -17,11 +14,11 @@ function toast({
         // auto remove toast
         const autoRemoveId = setTimeout(function(){
             main.removeChild(toast);
-        },duration + 1000);
+        }, duration + 1000);
 
         // remove toast after click
         toast.onclick = function(e) {
-            if (e.target.closest('.toast__close')){
+            if (e.target.closest('.custom-toast__close')){
                 main.removeChild(toast);
                 clearTimeout(autoRemoveId);
             };
@@ -36,18 +33,18 @@ function toast({
         const icon = icons[type];
         const delay = (duration / 1000).toFixed(2);
 
-        toast.classList.add('toast', `toast--${type}`);
+        toast.classList.add('custom-toast', `custom-toast--${type}`);
         toast.style.animation = `slideInLeft ease 0.3s, fadeOut linear 1s ${delay}s forwards`;
         
         toast.innerHTML = `
-            <div class="toast__icon">
+            <div class="custom-toast__icon">
                 <i class="${icon}"></i>
             </div>
-            <div class="toast__body">
-                <h3 class="toast__title">${title}</h3>
-                <div class="toast__msg">${message}</div>
+            <div class="custom-toast__body">
+                <h3 class="custom-toast__title">${title}</h3>
+                <div class="custom-toast__msg">${message}</div>
             </div>
-            <div class="toast__close">
+            <div class="custom-toast__close">
                 <i class="fas fa-times"></i>
             </div>
         `;
@@ -57,37 +54,37 @@ function toast({
 
 function showLoveToast(){
     toast({
-    title: 'Loved',
-    message: 'Sam Sam received heart!!!',
-    type: 'love',
-    duration: 2000,
+        title: 'Loved',
+        message: 'Yêu Sam Sam',
+        type: 'love',
+        duration: 2000,
     })
 }
 function showLikeToast(){
     toast({
-    title: 'Liked',
-    message: 'Sam Sam received like!',
-    type: 'like',
-    duration: 2000,
+        title: 'Liked',
+        message: 'Thích Sam Sam',
+        type: 'like',
+        duration: 2000,
     })
 }
 
 function showAngryToast(){
     toast({
-    title: 'Got Angry',
-    message: 'Sam Sam received angry~',
-    type: 'angry',
-    duration: 2000,
+        title: 'Got Angry',
+        message: 'Dận Sam Sam',
+        type: 'angry',
+        duration: 2000,
     })
 }
 
 //TOPIC - MUSIC
 {
-    const audio =  $('.topic__sound-audio');
-    const img = $('.topic__sound-img'); 
-    const control = $('.topic__sound-control');
-    const playBtn = $('i.topic__sound-icon--play');
-    const pauseBtn = $('i.topic__sound-icon--pause');
+    const audio =  document.querySelector('.topic__sound-audio');
+    const img = document.querySelector('.topic__sound-img'); 
+    const control = document.querySelector('.topic__sound-control');
+    const playBtn = document.querySelector('i.topic__sound-icon--play');
+    const pauseBtn = document.querySelector('i.topic__sound-icon--pause');
 
 
     const app = {
@@ -118,6 +115,18 @@ function showAngryToast(){
             audio.loop = true;
             //Handle Event
             this.handleEvent();
+            this.autoAvatarSlider();
+        },
+
+        autoAvatarSlider: function() {
+            let count = 1;
+            $(`img.topic__avatar-img-${count}`).addClass('active');
+            setInterval(function(){
+                if (count == 6) count = 1;
+                count++;
+                $('img.topic__avatar-img').removeClass('active');
+                $(`img.topic__avatar-img-${count}`).addClass('active');
+            }, 1500);
         }
     }
 

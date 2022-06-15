@@ -17,23 +17,11 @@
 
 @media (max-width: 739px)
 {
-    .grid__column-2{
-        width: 20%;
-        padding-left: 10px;
-        padding-right: 8px;
-    }
-
-    .grid__column-10{
-        width: 80%;
-        padding-left: 2px;
-        padding-right: 10px;
-    }
-
-    .grid__column-2-4{
-        width: 50%;
-    }
 
     /* header */
+    .header__nav {
+        padding: 0;
+    }
 
     .nav__contact-text{
         display: none;
@@ -155,16 +143,24 @@
         font-size: 1rem;
     }
 
-    /* container */
-    .container{
+    /* content */
+    .content{
         padding: 80px 0 120px;
     }
 
-    .container__img{
+    .content__title {
+        font-size: 1.6rem;
+    }
+
+    .content__img{
         height: 212px;
     }
 
     /* topic */
+    .topic {
+        height: 100px;
+    }
+
     img.topic__avatar-img {
         left: 10%;
         bottom: -12%;
@@ -183,28 +179,36 @@
         padding-top: 4px;
     }
     
+    .topic__sound-name {
+        display: none;
+    }
+
+    .topic__sound {
+        width: unset;
+    }
+
     /* reaction */
     .reaction__btn-wrap {
-        position: relative;
-        left: 4%;
-        top: 44px;
+        position: absolute;
+        left: 0;
+        top: 120%;
     }
 
     .reaction__btn-icon{
-        font-size: 6vmin;
+        font-size: 24px;
     }
 
     /* toast */
-    .toast{
+    .custom-toast{
         min-width: 200px;
         max-width: 250px;
         padding: 10px 0;
     }
     
-    .toast__title{
+    .custom-toast__title{
         font-size: 1.2rem;
     }
-    .toast__msg{
+    .custom-toast__msg{
         font-size: 1rem;
     }
 }
