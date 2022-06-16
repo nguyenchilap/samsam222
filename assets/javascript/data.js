@@ -865,7 +865,7 @@ const MUSICS = [
     {
         name: '(sau đây là) DỰ BÁO THỜI TIẾT (cho các vùng vào ngày mai)',
         author: 'Ngọt',
-        url: './assets/musics/EmCoChacKhong.mp3',
-        img: './assets/img/music-cover/EmCoChacKhong.jpg'
+        url: './assets/musics/DuBaoThoiTiet.mp3',
+        img: './assets/img/music-cover/DuBaoThoiTiet.jpg'
     }
 ]
