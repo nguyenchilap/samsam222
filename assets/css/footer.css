@@ -1,0 +1,17 @@
+#footer {
+    background-image: linear-gradient(0, #2D2424, #171010);
+    color: white;
+    height: 222px;
+    font-size: 14px;
+
+}
+
+.footer__content .author {
+    font-size: 8px;
+    height: 222px;
+    padding-bottom: 24px;
+}
+
+.footer__content .author div:nth-child(1) {
+    margin-top: auto;
+}

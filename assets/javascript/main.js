@@ -112,7 +112,7 @@ function onMusicItemBtn(event, index) {
 
 function handleScroll() {
     $(window).scroll(() => {
-        if($(window).scrollTop() + $(window).height() >= ($('#photos').height() - 120)/1.2) {
+        if($(window).scrollTop() + $(window).height() >= ($('#photos').height() - 120)/2) {
             $('.btn-scroll-top-content').addClass('active');
         } else {
             $('.btn-scroll-top-content').removeClass('active');
